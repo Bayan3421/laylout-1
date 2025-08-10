@@ -45,7 +45,43 @@ a {
    padding: 19px 18px;
    min-width: 270px;
 }
-
+.btn:hover {
+   background-color: #0777c7; 
+   transition: all 0.3s;
+}
+.arrows {
+    display: flex;
+}
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: #005fa3;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.arrows_white .arrow {
+    background: rgb(255, 255, 255, 0.2);
+}
+.arrows_white .arrow:hover {
+    background: rgb(255, 255, 255, 0.4);
+    transition: all 0.3s;
+}
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #FFFFFF;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: all .3s;
+} 
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    opacity: 1;
+    transition: all 0.3s;
+}
 .header {
     padding: 22px 0px;
 }
@@ -106,7 +142,9 @@ a {
     text-transform: uppercase;
     color: #222222;
 }
-
+.promo {
+    position: relative;
+}
 .promo_slide {
     position: relative;
     height: 670px;
@@ -133,4 +171,24 @@ a {
 }
 .promo .wrapper {
     width: 100%;
+}
+.promo_buttom {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 110px;
+    z-index: 11;
+}
+.promo_nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.promo_nav .swiper-pagination {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    gap: 40px;
 }
