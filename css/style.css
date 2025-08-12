@@ -266,3 +266,70 @@ a {
     opacity: 1;
     transition: all 0.3s;
 }
+
+.about_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_left {
+    width: 445px;
+}
+.about_title span {
+    color: #005FA3;
+}
+.about_desc {
+    margin-top: 60px;
+    font-weight: 300;
+}
+.about_right {
+    width: 540px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.about_coll {
+    display: block;
+    background-color: #EBEBEB;
+    padding: 30px 40px 40px;
+    width: calc(50% - 20px);
+    transition: all 0.3s;
+}
+.about_number {
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 66px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+}
+.about_coll-caption {
+    height: 57px;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    margin-bottom: 27px;
+    transition: all 0.3s;
+}
+.about_link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: underline;
+    color: #005FA3;
+    transition: all 0.3s;
+}
+.about_coll:hover {
+    background-color: #005FA3;
+    transition: all 0.3s;
+}
+.about_coll:hover .about_number,
+.about_coll:hover .about_coll-caption,
+.about_coll:hover .about_link {
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
